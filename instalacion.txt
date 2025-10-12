@@ -1,0 +1,21 @@
+1. pip install virtualenv
+2. python -m virtualenv --version
+3. python -m virtualenv venv
+4. F1 - select interpreter - poner el recomendado que activa en env
+
+5. pip install django 
+6. django-admin --version 
+7. django-admin startproject nombre .   
+
+
+
+-------------------------------------------------
+manage.py es para comandos administrativos, como levantar el server 
+python manage.py runserver    -- iniciar server
+python manage.py --help      --comandos de ayuda 
+
+------------------------------------------------------
+                CREAR APLICACIONES 
+python manage.py startapp nombre
+las llamaremos desde mysite que fue el primero que creamos 
+mysite configurara todas las aplicaciones 
