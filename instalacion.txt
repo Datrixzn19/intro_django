@@ -19,3 +19,9 @@ python manage.py --help      --comandos de ayuda
 python manage.py startapp nombre
 las llamaremos desde mysite que fue el primero que creamos 
 mysite configurara todas las aplicaciones 
+---------------------------------------------
+        BDD
+
+python manege.py makemigrations (myapp) -- Ejecuta las migraciones(se puede especificar de cual app queremos hacerlo, es opcional )
+
+python manage.py migrate     -- crea las tablas dentro del proyecto 
