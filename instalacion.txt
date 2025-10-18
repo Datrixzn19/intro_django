@@ -25,3 +25,24 @@ mysite configurara todas las aplicaciones
 python manege.py makemigrations (myapp) -- Ejecuta las migraciones(se puede especificar de cual app queremos hacerlo, es opcional )
 
 python manage.py migrate     -- crea las tablas dentro del proyecto 
+
+
+
+
+
+llenar tablas ejemplo 
+>>> p2 = Proyecto.objects.get(id=2)  buscar el registro en la tabla
+>>> p2.tareas_set.create(nombre="html") asignar datos
+
+>>> p2.tareas_set.all()  buscar 
+
+
+
+>>> p1 = Proyecto.objects.get(id=1)
+>>> from myapp.models import Proyecto, Tareas
+>>> p1
+<Proyecto: Proyecto object (1)>
+>>> p1.tareas_set.create(nombre="django")
+<Tareas: Tareas object (1)>
+
+exit()  para salir de django shell, entramos con python manage.py shell 

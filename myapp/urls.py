@@ -9,4 +9,8 @@ urlpatterns = [
     path('hello/<str:nombreUsuario>', views.hello),#parametros por url
     
     path("about/", views.about),
+
+    path("proyecto/", views.proyecto),
+
+    path("tareas/<int:id>", views.tareas),
 ]
