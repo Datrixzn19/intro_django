@@ -22,7 +22,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main/', include('myapp.urls')),#el primer parametro indica el prefijo para acceder las urls importadas
+    path('', include('myapp.urls')),
+    #path('main/', include('myapp.urls')),#el primer parametro indica el prefijo para acceder las urls importadas
     
 
 

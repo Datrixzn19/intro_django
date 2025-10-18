@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+#son para crear clases que luego seran tablas 
 
 class Proyecto(models.Model): 
     nombre = models.CharField(max_length=20)
