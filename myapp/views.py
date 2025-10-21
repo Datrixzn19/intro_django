@@ -12,7 +12,8 @@ from django.shortcuts import render #para renderizar html
 
 #cosas que se envian al navegador para que las vea el usuario 
 def index(response):
-    return render(response, 'index.html')
+    nombre = 'David'
+    return render(response, 'index.html', {'username': nombre}) #el '' es el que se le pone en el html
 
 def hello(response, nombreUsuario):
     return HttpResponse(f"<h1>Hola {nombreUsuario} </h1>")
