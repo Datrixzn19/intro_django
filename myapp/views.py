@@ -5,14 +5,14 @@ from django.http import HttpResponse, JsonResponse
 from .models import Proyecto, Tareas # importando los models que creé 
 
 from django.shortcuts import get_object_or_404 #es una funciona de django, lo uso para que no caiga el server al buscar un registro en model
-
+from django.shortcuts import render #para renderizar html
 
 
 # Create your views here.
 
 #cosas que se envian al navegador para que las vea el usuario 
 def index(response):
-    return HttpResponse("Hola esta es la pagina de inicio")
+    return render(response, 'index.html')
 
 def hello(response, nombreUsuario):
     return HttpResponse(f"<h1>Hola {nombreUsuario} </h1>")
