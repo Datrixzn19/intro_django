@@ -46,3 +46,5 @@ llenar tablas ejemplo
 <Tareas: Tareas object (1)>
 
 exit()  para salir de django shell, entramos con python manage.py shell 
+----
+python manage.py createsuperuser  -- es para crear una cuenta y acceder a /admin 
