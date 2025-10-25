@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>tareas</h1>
+
+    <h2>Lista de tareas</h2>
+    {%for tarea in tareas%}
+    <h1> {{tarea.nombre}} </h1>
+        {% if tarea.tareaRealizada == False%}
+            <p>Tarea no realizada</p>
+        
+            {% else %}
+            <p>Si relizada</p>
+        {% endif %}
+
+    {% endfor %}
+{% endblock %}

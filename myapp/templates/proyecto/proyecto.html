@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>proyecto</h1>
+
+    <h2>Lista de proyectos</h2>
+    {%for p in proyecto%}
+    <div> {{p.nombre}} </div>
+
+    {% endfor %}
+{% endblock %}
