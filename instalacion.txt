@@ -17,7 +17,7 @@ python manage.py --help      --comandos de ayuda
 ------------------------------------------------------
                 CREAR APLICACIONES 
 python manage.py startapp nombre
-las llamaremos desde mysite que fue el primero que creamos 
+las llamaremos desde mysite que fue el primero que creamos, ponemos el nombre de la app en INSTALLED_APPS 
 mysite configurara todas las aplicaciones 
 ---------------------------------------------
         BDD
