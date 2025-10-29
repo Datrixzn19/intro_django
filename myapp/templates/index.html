@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
 <h1>index</h1>
+
+<img src="{% static 'hola.png' %}" alt="HOLA" width="1000px">
+
 {% endblock %}

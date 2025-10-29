@@ -60,7 +60,7 @@ def crearTareas(request):
         })
     else:
         Tareas.objects.create(nombre=request.POST['nombre'], descripcion=request.POST['descripcion'], proyeto_id=1) # ['nombre'] -- va el nombre que le dimos en forms.py
-        return redirect('/tareas/')
+        return redirect('tareas')
 
 def crearProyecto(request):
     if request.method == 'GET':
@@ -69,4 +69,4 @@ def crearProyecto(request):
         })
     else:
         Proyecto.objects.create(nombre=request.POST['nombre'])
-        return redirect('/proyecto')
+        return redirect('proyecto')
